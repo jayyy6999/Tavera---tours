@@ -7,8 +7,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fefdfb;
+    color: #d4a574;
+    background-color: #ffffff;
 }
 
 .container {
@@ -19,8 +19,8 @@ body {
 
 /* Navigation */
 .navbar {
-    background: linear-gradient(135deg, #ffffff 0%, #fffbf5 100%);
-    color: #333;
+    background: #ffffff;
+    color: #d4a574;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -44,7 +44,7 @@ body {
     gap: 10px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #8b7355;
+    color: #d4a574;
 }
 
 .nav-menu {
@@ -54,7 +54,7 @@ body {
 }
 
 .nav-link {
-    color: #6b5d52;
+    color: #d4a574;
     text-decoration: none;
     transition: color 0.3s;
     font-size: 0.95rem;
@@ -62,7 +62,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #d4a574;
+    color: #c9965f;
 }
 
 .hamburger {
@@ -74,36 +74,36 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #6b5d52;
+    background: #d4a574;
     margin: 5px 0;
     transition: 0.3s;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #f5f1ed 0%, #fffbf5 100%);
-    color: #333;
+    background: #ffffff;
+    color: #d4a574;
     padding: 150px 20px;
     text-align: center;
     min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 3px solid #e8dfd6;
+    border-bottom: 3px solid #f0e6d8;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     animation: fadeInDown 0.8s ease;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .hero-content p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
     animation: fadeInUp 0.8s ease;
-    color: #8b7d72;
+    color: #d4a574;
 }
 
 /* Buttons */
@@ -120,20 +120,21 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #d4a574 0%, #c9965f 100%);
-    color: white;
+    background: #d4a574;
+    color: #ffffff;
     border: 2px solid #d4a574;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(212, 165, 116, 0.3);
-    background: linear-gradient(135deg, #c9965f 0%, #b8854d 100%);
+    background: #c9965f;
+    border-color: #c9965f;
 }
 
 .btn-secondary {
     background: #d4a574;
-    color: white;
+    color: #ffffff;
     border: 2px solid #d4a574;
 }
 
@@ -153,7 +154,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .tours-grid {
@@ -163,18 +164,18 @@ body {
 }
 
 .tour-card {
-    background: linear-gradient(135deg, #fffbf5 0%, #f9f3eb 100%);
+    background: #ffffff;
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(212, 165, 116, 0.1);
     transition: all 0.3s ease;
-    border: 2px solid #e8dfd6;
+    border: 2px solid #f0e6d8;
 }
 
 .tour-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(212, 165, 116, 0.15);
+    box-shadow: 0 15px 30px rgba(212, 165, 116, 0.2);
     border-color: #d4a574;
 }
 
@@ -187,11 +188,11 @@ body {
 .tour-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .tour-card p {
-    color: #8b7d72;
+    color: #d4a574;
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
@@ -199,19 +200,19 @@ body {
 /* Vehicles Section */
 .vehicles {
     padding: 80px 20px;
-    background: #f5f1ed;
+    background: #ffffff;
 }
 
 .vehicles h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .vehicles-subtitle {
     text-align: center;
-    color: #8b7d72;
+    color: #d4a574;
     margin-bottom: 3rem;
     font-size: 1.1rem;
 }
@@ -223,13 +224,13 @@ body {
 }
 
 .vehicle-card {
-    background: linear-gradient(135deg, #ffffff 0%, #fffbf5 100%);
+    background: #ffffff;
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(212, 165, 116, 0.1);
     transition: all 0.3s ease;
-    border: 2px solid #e8dfd6;
+    border: 2px solid #f0e6d8;
 }
 
 .vehicle-card:hover {
@@ -247,11 +248,11 @@ body {
 .vehicle-card h3 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .vehicle-capacity {
-    color: #c9965f;
+    color: #d4a574;
     font-weight: 600;
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
@@ -264,8 +265,8 @@ body {
 
 .vehicle-features li {
     padding: 0.7rem 0;
-    color: #6b5d52;
-    border-bottom: 1px solid #e8dfd6;
+    color: #d4a574;
+    border-bottom: 1px solid #f0e6d8;
 }
 
 .vehicle-features li:last-child {
@@ -288,12 +289,12 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .gallery-subtitle {
     text-align: center;
-    color: #8b7d72;
+    color: #d4a574;
     margin-bottom: 3rem;
     font-size: 1.1rem;
 }
@@ -307,7 +308,7 @@ body {
 .gallery-item {
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(212, 165, 116, 0.1);
     transition: all 0.3s ease;
     height: 250px;
 }
@@ -325,7 +326,7 @@ body {
 
 .placeholder-content {
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 .placeholder-content i {
@@ -337,28 +338,28 @@ body {
 /* Booking Section */
 .booking {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #f5f1ed 0%, #fffbf5 100%);
-    color: #333;
-    border-top: 3px solid #e8dfd6;
-    border-bottom: 3px solid #e8dfd6;
+    background: #ffffff;
+    color: #d4a574;
+    border-top: 3px solid #f0e6d8;
+    border-bottom: 3px solid #f0e6d8;
 }
 
 .booking h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .booking-form {
     max-width: 600px;
     margin: 0 auto;
-    background: white;
+    background: #ffffff;
     padding: 2rem;
     border-radius: 10px;
-    color: #333;
-    border: 2px solid #e8dfd6;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    color: #d4a574;
+    border: 2px solid #f0e6d8;
+    box-shadow: 0 5px 15px rgba(212, 165, 116, 0.1);
 }
 
 .form-group {
@@ -369,7 +370,7 @@ body {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .form-group input,
@@ -377,13 +378,19 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 2px solid #e8dfd6;
+    border: 2px solid #f0e6d8;
     border-radius: 5px;
     font-size: 1rem;
     font-family: inherit;
     transition: border-color 0.3s;
-    background-color: #fefdfb;
-    color: #333;
+    background-color: #ffffff;
+    color: #d4a574;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #d4a574;
+    opacity: 0.7;
 }
 
 .form-group input:focus,
@@ -391,7 +398,7 @@ body {
 .form-group textarea:focus {
     outline: none;
     border-color: #d4a574;
-    background-color: #fffbf5;
+    background-color: #ffffff;
 }
 
 .booking-form .btn-primary {
@@ -409,7 +416,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .contact-grid {
@@ -421,12 +428,12 @@ body {
 }
 
 .contact-card {
-    background: linear-gradient(135deg, #fffbf5 0%, #f9f3eb 100%);
+    background: #ffffff;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    border: 2px solid #e8dfd6;
+    box-shadow: 0 5px 15px rgba(212, 165, 116, 0.1);
+    border: 2px solid #f0e6d8;
 }
 
 .contact-card i {
@@ -438,7 +445,7 @@ body {
 .contact-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #6b5d52;
+    color: #d4a574;
 }
 
 .contact-card a {
@@ -454,14 +461,15 @@ body {
 
 /* Footer */
 .footer {
-    background: #6b5d52;
-    color: #f5f1ed;
+    background: #ffffff;
+    color: #d4a574;
     padding: 2rem;
     text-align: center;
+    border-top: 2px solid #f0e6d8;
 }
 
 .footer p {
-    color: #e8dfd6;
+    color: #d4a574;
 }
 
 .social-links {
@@ -477,7 +485,7 @@ body {
 }
 
 .social-links a:hover {
-    color: #ffffff;
+    color: #c9965f;
 }
 
 /* Animations */
@@ -514,13 +522,13 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background: linear-gradient(135deg, #ffffff 0%, #fffbf5 100%);
+        background: #ffffff;
         width: 100%;
         text-align: center;
         transition: 0.3s;
         gap: 0;
         padding: 2rem 0;
-        border-bottom: 2px solid #e8dfd6;
+        border-bottom: 2px solid #f0e6d8;
     }
 
     .nav-menu.active {
