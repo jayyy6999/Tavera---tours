@@ -25,27 +25,42 @@ bookingForm.addEventListener('submit', function(e) {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const phone = document.getElementById('phone').value.trim();
-    const destination = document.getElementById('destination').value;
-    const tourType = document.getElementById('tour-type').value;
-    const vehicle = document.getElementById('vehicle').value;
+    const pickup = document.getElementById('pickup').value.trim();
+    const destination = document.getElementById('destination').value.trim();
+    const vehicleType = document.getElementById('vehicle-type').value;
     const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
     const members = document.getElementById('members').value;
     const message = document.getElementById('message').value.trim();
 
-    // Validate all fields are filled
-    if (!name || !email || !phone || !destination || !tourType || !vehicle || !date || !members) {
+    // Validate required fields
+    if (!name || !email || !phone || !pickup || !destination || !vehicleType || !date || !time || !members) {
         alert('❌ Please fill in all required fields');
         return;
     }
 
-    // Format destination and tour type nicely
-    const formatText = (text) => text.charAt(0).toUpperCase() + text.slice(1).replace('-', ' ');
+    // Build WhatsApp message
+    const whatsappMessage =
+`🌟 *NEW BOOKING REQUEST - TAVERA MOBILITY* 🌟
 
-    // Format the message for WhatsApp
-    const whatsappMessage = `🌟 *NEW TOUR BOOKING REQUEST* 🌟\n\n👤 *CUSTOMER DETAILS:*\n• Name: ${name}\n• Email: ${email}\n• Phone: ${phone}\n\n🎫 *TOUR DETAILS:*\n• Destination: ${formatText(destination)}\n• Tour Type: ${formatText(tourType)}\n• Vehicle: ${formatText(vehicle)}\n• Preferred Date: ${date}\n• Number of Passengers: ${members}\n\n💬 *ADDITIONAL INFO:*\n${message || 'No additional message'}\n\n---\n*Please reply with pricing & confirmation*`;
+👤 *Customer Details*
+• Name: ${name}
+• Email: ${email}
+• Phone: ${phone}
 
-    // WhatsApp Business API
-    const whatsappNumber = '919611053999'; // Your WhatsApp number
+📍 *Trip Details*
+• Pickup: ${pickup}
+• Destination: ${destination}
+• Vehicle: ${vehicleType}
+• Preferred Date: ${date}
+• Preferred Time: ${time}
+• No. of Members: ${members}
+
+📝 *Additional Message*
+${message || '-'}
+`;
+
+    const whatsappNumber = '919611053999'; // confirmed by you
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
@@ -55,8 +70,8 @@ bookingForm.addEventListener('submit', function(e) {
     // Reset form after submission
     bookingForm.reset();
 
-    // Show success message
-    alert('✅ Booking request sent!\n\nOpening WhatsApp to connect with our team.\nYou will receive pricing details based on your vehicle choice.');
+    // Inform user
+    alert('✅ Booking request sent! Opening WhatsApp to connect with our team.');
 });
 
 // Smooth Scrolling for navigation links
@@ -89,7 +104,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Apply animation to all card elements
-document.querySelectorAll('.tour-card, .vehicle-card, .gallery-item, .contact-card').forEach(el => {
+document.querySelectorAll('.tour-card, .vehicle-card, .contact-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'all 0.6s ease';
